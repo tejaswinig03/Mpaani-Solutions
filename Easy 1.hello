@@ -1,15 +1,15 @@
 import java.util.*;
 public class LengthOfLastWord {
-    public static int lengthOfLastWord(String s) {
-        s = s.trim();
+    public static int lengthOfLastWord(String w) {
+        w = w.trim();
 
-        int lastSpaceIndex = s.lastIndexOf(' ');
+        int lastSpaceIndex = w.lastIndexOf(' ');
 
         if (lastSpaceIndex == -1) {
-            return s.length();
+            return w.length();
         }
 
-        return s.length() - lastSpaceIndex - 1;
+        return w.length() - lastSpaceIndex - 1;
     }
 
     public static void main(String[] args) {
